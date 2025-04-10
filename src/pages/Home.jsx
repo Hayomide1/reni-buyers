@@ -7,7 +7,9 @@ import BlackFridayCard from "../components/BlackFridayCard";
 import logoForBF from "../assets/logo.png";
 import Popularcategories from "../components/Popularcategories";
 import NewArrivals from "../components/NewArrivals";
-
+import OfficialStores from "../components/OfficialStores";
+import Perks from "../components/Perks";
+import MegaSalesCard from "../components/MegaSalesCard";
 // Mock data (this would typically come from an API/backend)
 const welcomeDeal = {
   title: "Welcome Deal",
@@ -55,12 +57,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Perks />
 
       {/* Popular Categories Section */}
       <Popularcategories />
 
       {/* New Arrivals Section */}
       <NewArrivals />
+      <MegaSalesCard />
+      <OfficialStores />
     </div>
   );
 };

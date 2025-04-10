@@ -36,9 +36,7 @@ const ProductCard = ({ product }) => {
           ))}
         </div>
         <p className="text-gray-500 text-xs mb-2">({reviewCount} Reviews)</p>
-        <p className="text-[#00137F] font-semibold text-lg">
-          {formatPrice(price)}
-        </p>
+        <p className="text-black font-semibold text-lg">{formatPrice(price)}</p>
       </div>
     </div>
   );
