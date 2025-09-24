@@ -10,7 +10,7 @@ const MainLayout = () => {
       <Navbar />
       <main className="flex-grow bg-[#f1f6fd]">
         <Categories />
-        <div className=" py-8 ">
+        <div className=" py-4 xl:py-8 ">
           <Outlet />
         </div>
       </main>

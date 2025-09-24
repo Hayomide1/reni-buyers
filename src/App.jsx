@@ -4,6 +4,7 @@ import "./App.css";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Stores from "./pages/Stores";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          {/* Add more routes here as needed */}
+          <Route path="stores" element={<Stores />} />
         </Route>
       </Routes>
     </BrowserRouter>

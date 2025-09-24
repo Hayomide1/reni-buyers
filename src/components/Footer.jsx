@@ -12,11 +12,15 @@ const Footer = () => {
   return (
     <footer className="bg-[#00137F] font-Poppins text-white py-8 px-8">
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-15">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-9 lg:gap-15">
           {/* Logo and Social Media Section */}
           <div className="flex flex-col items-center justify-start gap-4">
             <div>
-              <img src={logo} alt="Reni's Logo" className="h-16 w-16" />
+              <img
+                src={logo}
+                alt="Reni's Logo"
+                className="lg:h-16 lg:w-16 w-8 h-8"
+              />
             </div>
             <div className="flex items-center gap-4">
               <a href="#" className="hover:text-[#FFB800] transition-colors">
@@ -39,8 +43,8 @@ const Footer = () => {
 
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">About</h3>
-            <ul className="flex flex-col text-default items-start gap-4">
+            <h3 className="text-sm lg:text-xl font-semibold mb-4">About</h3>
+            <ul className="flex flex-col text-xs lg:text-default items-start gap-4">
               <li>
                 <a href="#" className="hover:text-[#FFB800] transition-colors">
                   About Us
@@ -71,10 +75,10 @@ const Footer = () => {
 
           {/* Make Money Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-sm lg:text-xl font-semibold mb-4">
               Make Money On Renistore
             </h3>
-            <ul className="flex flex-col text-default items-start gap-4">
+            <ul className="flex flex-col text-xs lg:text-default items-start gap-4">
               <li>
                 <a href="#" className="hover:text-[#FFB800] transition-colors">
                   Sell on Renistore
@@ -95,8 +99,10 @@ const Footer = () => {
 
           {/* Useful Links Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
-            <ul className="flex flex-col text-default items-start gap-4">
+            <h3 className=" text-sm lg:text-xl font-semibold mb-4">
+              Useful Links
+            </h3>
+            <ul className="flex flex-col text-xs lg:text-default items-start gap-4">
               <li>
                 <a href="#" className="hover:text-[#FFB800] transition-colors">
                   Track My Order
@@ -128,8 +134,8 @@ const Footer = () => {
           {/* Help and Payment Methods Section */}
           <div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Help</h3>
-              <ul className="flex flex-col text-default items-start gap-4">
+              <h3 className=" text-sm lg:text-xl font-semibold mb-4">Help</h3>
+              <ul className="flex flex-col text-xs lg:text-default items-start gap-4">
                 <li>
                   <a
                     href="#"
@@ -150,7 +156,9 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Payment Methods</h3>
+            <h3 className=" text-sm lg:text-xl font-semibold mb-4">
+              Payment Methods
+            </h3>
             <div className="flex gap-2">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/349/349221.png"

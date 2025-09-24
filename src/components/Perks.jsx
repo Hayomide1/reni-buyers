@@ -18,7 +18,7 @@ const Perks = () => {
     },
     {
       icon: slock,
-      title: "Safe Payment Method",
+      title: "Payment Method",
     },
     {
       icon: timer,
@@ -36,17 +36,17 @@ const Perks = () => {
 
   return (
     <div className="flex font-Poppins justify-center">
-      <div className="inline-flex items-center shadow-navShadow rounded-[16px] gap-8 bg-white p-4">
+      <div className=" grid grid-cols-3 lg:flex items-center lg:shadow-navShadow rounded-[16px] gap-8 lg:bg-white p-4">
         {perks.map((perk, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="w-8 h-8 mb-3">
+            <div className="lg:w-8 lg:h-8 w-6 sm:w-8 sm:h-8 h-6 mb-3">
               <img
                 src={perk.icon}
                 alt={perk.title}
                 className="w-full h-full object-contain"
               />
             </div>
-            <h3 className="text-[#6B7CB4] text-center font-Poppins text-sm">
+            <h3 className="text-[#6B7CB4] text-center font-Poppins text-sm lg:text-base">
               {perk.title}
             </h3>
           </div>

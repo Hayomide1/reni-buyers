@@ -12,8 +12,8 @@ const ProductCard = ({ product }) => {
   return (
     <div className="flex flex-col items-center w-full font-Poppins">
       {/* Image Card Section */}
-      <div className="bg-white rounded-2xl overflow-hidden shadow-md w-full p-4 border border-gray-200 mb-4">
-        <div className="flex items-center justify-center w-full aspect-square">
+      <div className="bg-white rounded-2xl overflow-hidden shadow-navShadow w-full p-4 border border-gray-200 mb-4">
+        <div className="flex items-center justify-center max-w-[13.1875rem] h-[181px] lg:h-[293px]">
           <img
             src={imageUrl}
             alt={title}
@@ -24,19 +24,23 @@ const ProductCard = ({ product }) => {
 
       {/* Details Section (Below Card) */}
       <div className="w-full text-center">
-        <p className="text-gray-700 font-medium text-sm mb-2 truncate">
+        <p className="text-gray-700 font-medium text-xs lg:text-sm mb-2 truncate">
           {title}
         </p>
         <div className="flex items-center justify-center gap-1 mb-1">
           {[...Array(5)].map((_, i) => (
             <FaStar
               key={i}
-              className={`text-yellow-400 ${i < rating ? "" : "text-gray-300"}`}
+              className={`text-sm text-yellow-400 ${
+                i < rating ? "" : "text-gray-300"
+              }`}
             />
           ))}
         </div>
         <p className="text-gray-500 text-xs mb-2">({reviewCount} Reviews)</p>
-        <p className="text-black font-semibold text-lg">{formatPrice(price)}</p>
+        <p className="text-black font-semibold text-sm lg:text-lg">
+          {formatPrice(price)}
+        </p>
       </div>
     </div>
   );

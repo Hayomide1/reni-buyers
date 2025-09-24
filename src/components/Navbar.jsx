@@ -7,6 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { MdOutlineHelpOutline } from "react-icons/md";
 import SearchCategoryModal from "./SearchCategoryModal";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [searchCategory, setSearchCategory] = useState("All");
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#00137F] font-Poppins flex items-center justify-between px-4 lg:px-10 xl:px-16 py-[26px]">
+      <nav className="bg-[#00137F] font-Poppins flex items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-16 py-[26px]">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
@@ -59,7 +60,7 @@ const Navbar = () => {
         {/* Right Side Items */}
         <div className="flex items-center gap-6">
           {/* Language Selector */}
-          <div className="hidden lg:flex items-center gap-2 text-white">
+          <div className="flex items-center gap-2 text-white">
             <span className="text-sm">🇺🇸</span>
             <span>EN</span>
             <IoMdArrowDropdown className="text-sm" />
@@ -83,10 +84,15 @@ const Navbar = () => {
 
           {/* Cart */}
           <div className="relative text-white">
-            <CiShoppingCart className="text-3xl" />
+            <CiShoppingCart className="text-4xl lg:text-3xl" />
             <span className="absolute -top-2 -right-2 bg-[#FFB800] text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
               1
             </span>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="lg:hidden">
+            <IoMenu className="text-white text-4xl" />
           </div>
         </div>
       </nav>
